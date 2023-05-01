@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/Camiseta favicon.png" type="image/x-icon">
+    <!-- FUENTE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Animaciones  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- SWEET ALERT  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>3era preentrega De Feo Villagra</title>
+</head>
+
+<body>
+    <div class="carrito hidden animate__animated animate__backInLeft">
+        <button id="cerrarCarrito"><img src="./assets/icons/cerrar.svg" alt="Boton cerrar"></button>
+        <h2>Su carrito</h2>
+        <div class="prodCarrito">
+            <p>Foto</p>
+            <p>Nombre</p>
+            <p>Cantidad</p>
+            <p>Precio</p>
+            <button><img src="./assets/icons/trash.svg" alt="Boton borrar"></button>
+        </div>
+    </div>
+    <div class="container">
+
+        <header>
+            <div class="container">
+                <button id="login"> LOGIN</button>
+                <button id="btnCarrito"> <img src="./assets/icons/carrito.svg" alt="Icono carrito de compras"></button>
+            </div>
+        </header>
+        <main>
+            <div class="buscar">
+                <label for="buscar">Buscar</label>
+                <input id="buscar" type="text" placeholder="Nombre del producto">
+            </div>
+            <div class="productos animate__animated animate__backInDown" id="divProductos">
+                <div class="cardProducto">
+                    <img src="./assets/productos/Camiseta boca.webp" alt="">
+                    <p>Camiseta de Boca Juniors</p>
+                    <small>Camiseta Jugador</small>
+                    <small>Talles S-XL</small>
+                    <strong>$ 20000</strong>
+                    <button class="btnAgregar">Agregar al Carrito</button>
+                </div>
+                <div class="cardProducto">
+                    <img src="./assets/productos/Camiseta river.webp" alt="">
+                    <p>Camiseta River</p>
+                    <small>Camiseta Jugador</small>
+                    <small>Talles S-XL</small>
+                    <strong>$ 18000</strong>
+                    <button class="btnAgregar">Agregar al Carrito</button>
+                </div>
+                <div class="cardProducto">
+                    <img src="./assets/productos/Seleccion argentina.avif" alt="">
+                    <p>Camiseta seleccion Argentina</p>
+                    <small>Camiseta Jugador</small>
+                    <small>Talles S-XL</small>
+                    <strong>$ 22000</strong>
+                    <button class="btnAgregar">Agregar al Carrito</button>
+                </div>
+
+                <div class="cardProducto">
+                    <img src="./assets/productos/buzo boca.webp" alt="">
+                    <p>Buzo Boca</p>
+                    <small>Buzo algodon</small>
+                    <small>Talle S-XL</small>
+                    <strong>$ 30000</strong>
+                    <button class="btnAgregar">Agregar al Carrito</button>
+                </div>
+
+                <div class="cardProducto">
+                    <img src="./assets/productos/buzo river.webp" alt="">
+                    <p>Buzo River</p>
+                    <small>Buzo algodon</small>
+                    <small>Talle S-XL</small>
+                    <strong>$ 30000</strong>
+                    <button class="btnAgregar">Agregar al Carrito</button>
+                </div>
+
+                <div class="cardProducto">
+                    <img src="./assets/productos/seleccion.webp" alt="">
+                    <p>Buzo Seleccion</p>
+                    <small>Buzo algodon</small>
+                    <small>Talle S-XL</small>
+                    <strong>$ 30000</strong>
+                    <button class="btnAgregar">Agregar al Carrito</button>
+                </div>
+            </div>
+    </div>
+    </div>
+    </main>
+
+    </div>
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>

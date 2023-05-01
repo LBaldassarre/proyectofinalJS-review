@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../assets/Cancha.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* INDEX */
+
+.carrito{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  align-items: center;
+  padding: .5rem;
+  background-color: #303030a1;
+  overflow: hidden;
+  
+}
+#cerrarCarrito{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  top: 2%;
+  right: 3%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 50%;
+}
+#cerrarCarrito img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prodCarrito{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+header .container{
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  background-color: rgba(255, 255, 255, 0.116);
+  backdrop-filter: blur(10px);
+}
+header .container button{
+  width: 30%;
+  height: 100%;
+  margin: auto;
+  background-color: transparent;
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: black;
+  transition: all.3s linear;
+}
+header .container a{
+  text-decoration: none;
+  width: 30%;
+  height: 100%;
+  font-weight: bold;
+  color: black;
+  transition: all.3s linear;
+}
+#btnCarrito img{
+width: 1.5rem;
+
+}
+header .container button:hover{
+  background-color: rgba(22, 69, 240, 0.404);
+  outline: 0.5px solid black;
+}
+
+.buscar {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  color: black;
+}
+.buscar label {
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  text-shadow: 0px 0px 4px rgb(5, 5, 5);
+  font-weight: bold;
+}
+.buscar input {
+  width: 100%;
+  max-width: 800px;
+  height: 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  transition: all 0.2s ease;
+  font-weight: 550;
+}
+.buscar input:hover {
+  box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.616);
+}
+
+
+.productos {
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardProducto {
+  width: 100%;
+  max-width: 18rem;
+  max-height: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.116);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.562);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  transition: all.3s linear;
+  position: relative;
+}
+.cardProducto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.cardProducto:hover {
+  transform: scale(1.05);
+}
+
+.cardProducto p,
+small,
+strong {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.hidden{
+  display: none;
+}
+.btnBorrar{
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  background-color: transparent;
+  border: none;
+}
+
+.btnBorrar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btnAgregar {
+  width: 60%;
+  height: 100%;
+  margin: auto;
+  background-color: rgba(22, 69, 240, 0.404);
+  border: none;
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all.3s linear;
+}
+.btnAgregar:hover {
+  background-color: rgba(9, 42, 161, 0.404);
+  border: 1px solid #ffffff;
+}
+
+/* AGREGAR PRODUCTO */
+
+.TituloAgregar{
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+  min-width: 300px;
+  max-width: 800px;
+  height: auto;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.562);
+  background-color: rgba(255, 255, 255, 0.116);
+  backdrop-filter: blur(10px);
+}
+.form h1 {
+  text-align: center;
+}
+.labelInput {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: black;
+  }
+
+.inputForm {
+  height: 2rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: 1px solid black;
+  padding: 0.5rem;
+  transition: all 0.2s linear;
+  font-weight: 550;
+}
+
+.inputForm:hover {
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.616);
+  transform: scale(1, 1.05);
+}
+
+.inputFile {
+  opacity: 0;
+  position: absolute;
+}
+
+#preview {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+#labelFIle::after {
+  content: "Cargar Archivo...";
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: rgb(117, 115, 115);
+  color: #303030;
+  cursor: pointer;
+}
+.btnForm {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(22, 69, 240, 0.404);
+  border: none;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all.3s linear;
+}
+.btnForm:hover {
+  background-color: rgba(2, 28, 122, 0.404);
+  transform: scale(0.98);
+}
+
+
