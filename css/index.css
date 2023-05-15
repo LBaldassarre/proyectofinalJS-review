@@ -25,6 +25,15 @@ body {
 
 /* INDEX */
 
+.Titulo{
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  text-shadow: 0px 0px 4px rgb(5, 5, 5);
+  font-weight: bold;
+  text-align: center;
+  font-size: 3rem;
+}
+
 .carrito{
   position: absolute;
   width: 100%;
@@ -111,7 +120,7 @@ header .container button:hover{
 }
 .buscar label {
   text-transform: uppercase;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.2rem;
   text-shadow: 0px 0px 4px rgb(5, 5, 5);
   font-weight: bold;
 }

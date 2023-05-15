@@ -18,30 +18,34 @@
     <title>3era preentrega De Feo Villagra</title>
 </head>
 
-<body>
+<body id="bodyComprarProductos">
     <div class="carrito hidden animate__animated animate__backInLeft">
         <button id="cerrarCarrito"><img src="./assets/icons/cerrar.svg" alt="Boton cerrar"></button>
-        <h2>Su carrito</h2>
-        <div class="prodCarrito">
-            <p>Foto</p>
-            <p>Nombre</p>
-            <p>Cantidad</p>
-            <p>Precio</p>
-            <button><img src="./assets/icons/trash.svg" alt="Boton borrar"></button>
+        <h2>CARRITO DE COMPRAS</h2>
+        <div class="divCarrito animate__animated">
         </div>
+        <strong class="total">$</strong>
+        <button class="comprar">Comprar</button>
+        <button class="vaciarCarrito">Vaciar carrito</button>
     </div>
     <div class="container">
 
-        <header>
+        <header class="header">
             <div class="container">
-                <button id="login"> LOGIN</button>
-                <button id="btnCarrito"> <img src="./assets/icons/carrito.svg" alt="Icono carrito de compras"></button>
+                <strong class="hidden nameUserNav animate__animated"></strong>
+                <button class="hidden animate__animated" id="agregar"><a
+                        href="./js/agregarProducto.js">AGREGAR</a></button>
+                <button id="btnCarrito">
+                    <p class="carritoLength animate__animated"></p>
+                    <img class="animate__animated" src="./assets/icons/carrito.svg" alt="Icono carrito de compras">
+                </button>
             </div>
         </header>
         <main>
+            <h2 class="Titulo">Tienda Deportiva</h2>
             <div class="buscar">
                 <label for="buscar">Buscar</label>
-                <input id="buscar" type="text" placeholder="Nombre del producto">
+                <input id="buscar" type="text" placeholder="Buscar equipo">
             </div>
             <div class="productos animate__animated animate__backInDown" id="divProductos">
                 <div class="cardProducto">
@@ -50,7 +54,7 @@
                     <small>Camiseta Jugador</small>
                     <small>Talles S-XL</small>
                     <strong>$ 20000</strong>
-                    <button class="btnAgregar">Agregar al Carrito</button>
+                    <button id="boton1" class="btnAgregar">Agregar al Carrito</button>
                 </div>
                 <div class="cardProducto">
                     <img src="./assets/productos/Camiseta river.webp" alt="">
@@ -101,7 +105,7 @@
     </main>
 
     </div>
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/productos.js" type="module"></script>
 </body>
 
 </html>

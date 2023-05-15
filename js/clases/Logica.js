@@ -37,9 +37,9 @@ mostrarProd(){
             const cardProducto = document.createElement("div")
             cardProducto.classList.add("cardProducto")
             cardProducto.innerHTML =`
-                    <button class="btnBorrar"><img name="borrar" src="../assets/icons/trash.svg" alt=""></button>
+                    <button class="btnBorrar"><img name="borrar" src="./assets/icons/trash.svg" alt=""></button>
                     <p class="hidden">${prod.id}</p>
-                    <img src=${prod.foto || "../assets/productos/producto-sin-imagen.png"} alt="">
+                    <img src=${prod.foto || "./assets/productos/producto-sin-imagen.png"} alt="">
                     <p>${prod.nombre}</p>
                     <small>${prod.dimensiones}</small>
                     <small>${prod.caracteristicas}</small>
